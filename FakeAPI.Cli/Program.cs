@@ -2,7 +2,7 @@ using System.Text;
 using Raccoon.Ninja.FakeAPI.Cli.ExtensionMethods;
 using Raccoon.Ninja.FakeAPI.Cli.Handlers;
 
-var builder = WebApplication.CreateBuilder(new string[]{});
+var builder = WebApplication.CreateBuilder(Array.Empty<string>());
 var app = builder.Build();
 
 var options = new CliArgsHandler(new FileHandler())

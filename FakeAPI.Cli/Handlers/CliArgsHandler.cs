@@ -54,7 +54,7 @@ public class CliArgsHandler
         return statusCode;
     }
 
-    private int GetPortNumber(string[] args)
+    private static int GetPortNumber(string[] args)
     {
         if (args == null)
             return Port;
@@ -66,7 +66,7 @@ public class CliArgsHandler
         return port;
     }
 
-    private string GetHostUrl(string[] args)
+    private static string GetHostUrl(string[] args)
     {
         if (args == null)
             return HostUrl;
