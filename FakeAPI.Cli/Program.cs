@@ -14,7 +14,7 @@ app.Use(async (context, next) =>
     if (string.IsNullOrWhiteSpace(context.Request.Path))
         await next(context);
 
-    Console.WriteLine("----------------------------------------------------------------------------------------------");
+    Console.WriteLine("---------------------------------------------------------------------------------------------");
     Console.WriteLine($"[{context.Request.Method}] Received At: {DateTime.Now}");
     Console.WriteLine("---------------------------------------------");
     Console.WriteLine($"[{context.Request.Method}] Endpoint: {context.Request.Path}");
